@@ -1,11 +1,11 @@
 {
-    "name": "mng_soft",
-    "short_name": "mng_soft",
+    "name": "flutter_template_login_firebase2_bloc",
+    "short_name": "flutter_template_login_firebase2_bloc",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A Managment Software",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
