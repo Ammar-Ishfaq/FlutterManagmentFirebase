@@ -6,6 +6,7 @@ import 'package:flutter_template_login_firebase2_bloc/loading/loading_screen.dar
 import 'package:flutter_template_login_firebase2_bloc/views/login_view.dart';
 import 'package:flutter_template_login_firebase2_bloc/views/photo_gallery_view.dart';
 import 'package:flutter_template_login_firebase2_bloc/views/register_view.dart';
+import 'package:flutter_template_login_firebase2_bloc/views/splash_view.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -44,7 +45,9 @@ class App extends StatelessWidget {
             }
           },
           builder: (context, appState) {
-            if (appState is AppStateLoggedOut) {
+            if (appState is AppStateSplashView) {
+              return const SplashView();
+            } else if (appState is AppStateLoggedOut) {
               return const LoginView();
             } else if (appState is AppStateLoggedIn) {
               return const PhotoGalleryView();

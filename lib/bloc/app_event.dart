@@ -58,3 +58,7 @@ class AppEventRegister implements AppEvent {
     required this.password,
   });
 }
+
+class AppEventSplash implements AppEvent {
+  const AppEventSplash();
+}

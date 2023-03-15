@@ -60,6 +60,21 @@ class AppStateLoggedOut extends AppState {
 }
 
 @immutable
+class AppStateSplashView extends AppState {
+  AppStateSplashView({
+    required bool isLoading,
+    AuthError? authError,
+  }) : super(
+          isLoading: isLoading,
+          authError: authError,
+        );
+
+  @override
+  String toString() =>
+      'AppStateLoggedOut, isLoading = $isLoading, authError = $authError';
+}
+
+@immutable
 class AppStateIsInRegistrationView extends AppState {
   AppStateIsInRegistrationView({
     required bool isLoading,

@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_template_login_firebase2_bloc/auth/auth_error.dart';
 import 'package:flutter_template_login_firebase2_bloc/utils/upload_image.dart';
+import 'package:flutter_template_login_firebase2_bloc/views/splash_view.dart';
 import 'package:meta/meta.dart';
 
 part 'app_event.dart';
@@ -12,6 +13,14 @@ part 'app_state.dart';
 
 class AppBloc extends Bloc<AppEvent, AppState> {
   AppBloc() : super(AppStateLoggedOut(isLoading: false)) {
+    on<AppEventSplash>(
+      (event, emit) {
+        emit(
+          AppStateSplashView(isLoading: false),
+        );
+      },
+    );
+
     on<AppEventGoToRegistration>(
       (event, emit) {
         emit(
@@ -97,22 +106,24 @@ class AppBloc extends Bloc<AppEvent, AppState> {
 
     on<AppEventInitialize>(
       (event, emit) async {
-        final user = FirebaseAuth.instance.currentUser;
-        if (user == null) {
-          emit(
-            AppStateLoggedOut(isLoading: false),
-          );
-        } else {
-          // go grab user's uploaded images
-          final images = await _getImages(user.uid);
-          emit(
-            AppStateLoggedIn(
-              user: user,
-              images: images,
-              isLoading: false,
-            ),
-          );
-        }
+        emit(AppStateSplashView(isLoading: false));
+
+        // final user = FirebaseAuth.instance.currentUser;
+        // if (user == null) {
+        //   emit(
+        //     AppStateLoggedOut(isLoading: false),
+        //   );
+        // } else {
+        //   // go grab user's uploaded images
+        //   final images = await _getImages(user.uid);
+        //   emit(
+        //     AppStateLoggedIn(
+        //       user: user,
+        //       images: images,
+        //       isLoading: false,
+        //     ),
+        //   );
+        // }
       },
     );
 
