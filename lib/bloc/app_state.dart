@@ -22,6 +22,7 @@ class AppStateLoggedIn extends AppState {
           isLoading: isLoading,
           authError: authError,
         );
+
   @override
   bool operator ==(other) {
     final otherClass = other;
@@ -62,6 +63,21 @@ class AppStateLoggedOut extends AppState {
 @immutable
 class AppStateSplashView extends AppState {
   AppStateSplashView({
+    required bool isLoading,
+    AuthError? authError,
+  }) : super(
+          isLoading: isLoading,
+          authError: authError,
+        );
+
+  @override
+  String toString() =>
+      'AppStateLoggedOut, isLoading = $isLoading, authError = $authError';
+}
+
+@immutable
+class AppStateAfterSplashManagment extends AppState {
+  AppStateAfterSplashManagment({
     required bool isLoading,
     AuthError? authError,
   }) : super(

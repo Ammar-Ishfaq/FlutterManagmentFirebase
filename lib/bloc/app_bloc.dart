@@ -9,6 +9,7 @@ import 'package:flutter_template_login_firebase2_bloc/views/splash_view.dart';
 import 'package:meta/meta.dart';
 
 part 'app_event.dart';
+
 part 'app_state.dart';
 
 class AppBloc extends Bloc<AppEvent, AppState> {
@@ -126,7 +127,27 @@ class AppBloc extends Bloc<AppEvent, AppState> {
         // }
       },
     );
-
+    //after splash what to do
+    on<AfterSplashManagment>(
+      (event, emit) async {
+        final user = FirebaseAuth.instance.currentUser;
+        if (user == null) {
+          emit(
+            AppStateLoggedOut(isLoading: false),
+          );
+        } else {
+          // go grab user's uploaded images
+          final images = await _getImages(user.uid);
+          emit(
+            AppStateLoggedIn(
+              user: user,
+              images: images,
+              isLoading: false,
+            ),
+          );
+        }
+      },
+    );
     // log out event
     on<AppEventLogOut>(
       (event, emit) async {

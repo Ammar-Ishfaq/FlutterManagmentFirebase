@@ -44,6 +44,11 @@ class AppEventGoToRegistration implements AppEvent {
 }
 
 @immutable
+class AfterSplashManagment implements AppEvent {
+  const AfterSplashManagment();
+}
+
+@immutable
 class AppEventGoToLogin implements AppEvent {
   const AppEventGoToLogin();
 }
