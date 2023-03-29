@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_template_login_firebase2_bloc/bloc/app_bloc.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/main_pop_up_menu_button.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/storage_image_view.dart';
+import 'package:ohaino/bloc/app_bloc.dart';
+import 'package:ohaino/views/main_pop_up_menu_button.dart';
+import 'package:ohaino/views/storage_image_view.dart';
 import 'package:image_picker/image_picker.dart';
 
 class PhotoGalleryView extends HookWidget {

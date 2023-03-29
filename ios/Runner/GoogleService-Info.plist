@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>43447843925-p2p38gfq17bgvd9gce38j4kqj5av7slv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.43447843925-p2p38gfq17bgvd9gce38j4kqj5av7slv</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>43447843925-4p7idr4tmmmtjvqm2b248lp0bg9srjlr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyChdqE0JRBO6yqctVkGUKa_cWgllrN92vs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>43447843925</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ammar.ohaino</string>
+	<key>PROJECT_ID</key>
+	<string>firstonlinejavadb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>firstonlinejavadb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:43447843925:ios:cda2afe1de14e00d82e8dc</string>
+	<key>DATABASE_URL</key>
+	<string>https://firstonlinejavadb.firebaseio.com</string>
+</dict>
+</plist>

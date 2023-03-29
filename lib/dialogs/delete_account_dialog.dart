@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_template_login_firebase2_bloc/dialogs/generic_dialog.dart';
+import 'package:ohaino/dialogs/generic_dialog.dart';
 
 Future<bool> showDeleteAccountDialog(
   BuildContext context,

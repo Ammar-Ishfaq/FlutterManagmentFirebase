@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_template_login_firebase2_bloc/bloc/app_bloc.dart';
-import 'package:flutter_template_login_firebase2_bloc/dialogs/show_auth_error_dialog.dart';
-import 'package:flutter_template_login_firebase2_bloc/loading/loading_screen.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/login_view.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/photo_gallery_view.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/register_view.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/splash_view.dart';
+import 'package:ohaino/bloc/app_bloc.dart';
+import 'package:ohaino/dialogs/show_auth_error_dialog.dart';
+import 'package:ohaino/loading/loading_screen.dart';
+import 'package:ohaino/views/login_view.dart';
+import 'package:ohaino/views/photo_gallery_view.dart';
+import 'package:ohaino/views/register_view.dart';
+import 'package:ohaino/views/splash_view.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);

@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter_template_login_firebase2_bloc/auth/auth_error.dart';
-import 'package:flutter_template_login_firebase2_bloc/utils/upload_image.dart';
-import 'package:flutter_template_login_firebase2_bloc/views/splash_view.dart';
+import 'package:ohaino/auth/auth_error.dart';
+import 'package:ohaino/utils/upload_image.dart';
+import 'package:ohaino/views/splash_view.dart';
 import 'package:meta/meta.dart';
 
 part 'app_event.dart';

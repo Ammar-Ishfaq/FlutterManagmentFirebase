@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_template_login_firebase2_bloc/loading/loading_screen_controller.dart';
+import 'package:ohaino/loading/loading_screen_controller.dart';
 
 class LoadingScreen {
   // singleton pattern

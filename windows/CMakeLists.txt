@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(flutter_template_login_firebase2_bloc LANGUAGES CXX)
+project(ohaino LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_template_login_firebase2_bloc")
+set(BINARY_NAME "ohaino")
 
 cmake_policy(SET CMP0063 NEW)
 

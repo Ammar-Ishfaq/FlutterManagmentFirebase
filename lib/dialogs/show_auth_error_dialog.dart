@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_template_login_firebase2_bloc/auth/auth_error.dart';
-import 'package:flutter_template_login_firebase2_bloc/dialogs/generic_dialog.dart';
+import 'package:ohaino/auth/auth_error.dart';
+import 'package:ohaino/dialogs/generic_dialog.dart';
 
 Future<void> showAuthError({
   required AuthError authError,
