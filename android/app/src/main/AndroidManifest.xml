@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ammar.ohaino">
+    package="com.sinasys.gorest.ohaino">
    <application
         android:label="ohaino"
         android:name="${applicationName}"
